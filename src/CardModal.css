@@ -1,0 +1,135 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--theme-overlay);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 420px;
+  max-width: 90vw;
+  background: var(--theme-surface);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 0;
+}
+
+.modal-header h3 {
+  color: var(--theme-text-bright);
+  font-size: 18px;
+}
+
+.modal-close {
+  border: none;
+  background: none;
+  color: var(--theme-text-muted);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--theme-text);
+}
+
+.modal-body {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-body label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.modal-body input[type="text"] {
+  padding: 10px 14px;
+  border: 1px solid var(--theme-border);
+  border-radius: 8px;
+  background: var(--theme-input-bg);
+  color: var(--theme-text);
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.modal-body input[type="text"]:focus {
+  outline: none;
+  border-color: var(--theme-primary);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  padding: 16px 24px 24px;
+  border-top: 1px solid var(--theme-border);
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.modal-actions button:hover {
+  opacity: 0.85;
+}
+
+.modal-actions button:first-child {
+  background: var(--theme-primary);
+  color: #fff;
+}
+
+.modal-actions .danger {
+  background: var(--theme-danger);
+  color: #fff;
+}
+
+.color-pickers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.color-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.color-field-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--theme-text-bright);
+}
+
+.modal-error {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: rgba(226, 74, 74, 0.15);
+  color: var(--theme-danger);
+  font-size: 13px;
+}

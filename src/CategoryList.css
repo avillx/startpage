@@ -1,0 +1,20 @@
+.category-list {
+  display: contents;
+}
+
+.add-category-btn {
+  padding: 12px;
+  border: 2px dashed var(--theme-border-light);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--theme-text-muted);
+  font-size: 15px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  margin-top: 8px;
+}
+
+.add-category-btn:hover {
+  border-color: var(--theme-primary);
+  color: var(--theme-primary);
+}
